@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="profile-card">
+        <div class="profile-img" data-testid="profilePicture">
+          <img
+            src="images/Round Photo_Dec312024_004104.png"
+            alt="profile-image"
+          />
+        </div>
+        <div class="profile-content">
+          <div class="profile-horizontal">
+            <div class="profile-bio">
+              <h1 data-testid="fullName">Bukola Ajamolaya</h1>
+              <h3 data-testid="jobTitle">Web Developer</h3>
+              <p data-testid="shortBio">
+                Hi there! I’m a passionate Web Developer who thrives at the
+                intersection of creativity and code. I have a solid foundation
+                in front-end development (HTML, CSS, JavaScript, and React). My
+                mission? Turning complex problems into sleek, responsive
+                solutions.
+              </p>
+            </div>
+
+            <div class="profile-info">
+              <div class="location">
+                <img src="images/map-pin.svg" alt="" />
+                <p data-testid="currentLocation">Lagos, Nigeria</p>
+              </div>
+              <div class="email">
+                <img src="images/mail.svg" alt="" />
+                <a href="mailto:bumolaya@gmail.com" data-testid="emailAddress"
+                  >bumolaya@gmail.com</a
+                >
+              </div>
+            </div>
+            <footer>
+              <p data-testid="currentTimeUTC" id="currentTimeUTC"></p>
+            </footer>
+          </div>
+          <div class="profile-vertical">
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/bukola-ajamolaya"
+                target="_blank"
+                data-testid="socialLinks"
+                ><img src="images/linkedin.svg" alt=""
+              /></a>
+
+              <div class="row">
+                <a
+                  href="https://github.com/PuckerFace"
+                  target="_blank"
+                  data-testid="socialLinks"
+                  ><img src="images/github.svg" alt=""
+                /></a>
+              </div>
+              <div class="row">
+                <a
+                  href="https://www.instagram.com/khafe_a"
+                  target="_blank"
+                  data-testid="socialLinks"
+                  ><img src="images/instagram.svg" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
