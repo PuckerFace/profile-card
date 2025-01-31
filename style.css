@@ -22,7 +22,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
+  height: 100vh;
+  width: 100%;
   padding: 20px;
   color: var(--text-colour);
   background-color: var(--bg);
@@ -186,9 +187,31 @@ a:hover {
   h1 {
     font-size: 2rem;
   }
+  body {
+    padding: 50px;
+  }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
+  p {
+    font-size: 0.8rem;
+  }
   .profile-info {
     flex-direction: column;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+  .profile-vertical {
+    padding-top: 0px;
+  }
+  .profile-img {
+    padding: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .profile-card {
+    max-width: 500px;
+  }
+  body {
+    height: 100%;
   }
 }
